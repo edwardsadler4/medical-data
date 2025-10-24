@@ -28,6 +28,7 @@
 	</scm>
 	<properties>
 		<java.version>19</java.version>
+        <concordium-sdk.version>11.1.0</concordium-sdk.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -40,7 +41,15 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+
+    <!-- Concordium Java SDK -->
+    <dependency>
+        <groupId>com.concordium.sdk</groupId>
+        <artifactId>concordium-sdk</artifactId>
+        <version>${concordium-sdk.version}</version>
+    </dependency>
+
+    </dependencies>
 
 	<build>
 		<plugins>
