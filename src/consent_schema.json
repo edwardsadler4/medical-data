@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ConsentAttributes",
+  "type": "object",
+  "properties": {
+    "consentPurpose": {
+      "type": "string"
+    },
+    "recipientCompany": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": ["consentPurpose", "recipientCompany", "timestamp"]
+}
